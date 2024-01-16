@@ -39,7 +39,7 @@ public class matrix
             System.out.println();
 
         }
-        search(matrix_array, 4);
+        search(matrix_array, 11);
        
     }
     
