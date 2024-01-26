@@ -41,15 +41,15 @@ public class strings {
 
 // System.out.println(sub(str, 1,4));
 
-            String fruits[] ={"apple","mango", "orange"};
-            String largest = fruits[0];
-            for(int i= 0 ; i < fruits.length; i++){
-                if(largest.compareTo(fruits[i])<0){
-                    largest = fruits[i];
-                }
-            }
-            System.out.println(largest);
-        }
+        //     String fruits[] ={"apple","mango", "orange"};
+        //     String largest = fruits[0];
+        //     for(int i= 0 ; i < fruits.length; i++){
+        //         if(largest.compareTo(fruits[i])<0){
+        //             largest = fruits[i];
+        //         }
+        //     }
+        //     System.out.println(largest);
+        // }
 // public static String sub(String str, int si, int ei ){
 //     String Sub= "";
 //     for(int i = si ; i<ei; i++){
@@ -58,4 +58,14 @@ public class strings {
 
 // return Sub;
 // }
+
+// String Builder
+
+StringBuilder a = new StringBuilder("");
+for (char i = 'a'; i < 'z'; i++){
+    a.append(i);
+}
+    System.out.println(a);
+
+}
 }
