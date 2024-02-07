@@ -22,16 +22,27 @@ public class bitManipulation {
 // }
 // setting the bit 
     
-    // public static int setBit(int n , int i){
-    //     int bitmask = 1<<i;
-    //     return n|bitmask;
-    // }
+    public static int setBit(int n , int i){
+        int bitmask = 1<<i;
+        return n|bitmask;
+    }
 
     // clearing the bit
 
     public static int clearBit(int n , int i){
         int bitmask = ~(1<<i);
         return n & bitmask;
+    }
+
+    //updating the bit 
+
+    public static int upadateBit(int n , int i , int pos){
+        if(pos == 0){
+           return clearBit(n, i);
+        }
+        else {
+            return setBit(n, i);
+        }
     }
     public static void main(String args[]){
         // System.out.println((5&7));
@@ -43,7 +54,8 @@ public class bitManipulation {
         // evenodd(30);
         // System.out.println(getBit(10, 2));
         // System.out.println(setBit(10, 2));
-        System.out.println((clearBit(10, 1)));
+        // System.out.println((clearBit(10, 1)));
+        System.out.println((upadateBit(10, 2, 1))); 
 
     }
 }

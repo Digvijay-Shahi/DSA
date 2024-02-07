@@ -38,10 +38,11 @@ public class sprial {
         System.out.println();
      }
     public static void main (String args[]){
-        int matrix[][] = {{1,2,3,4},
-                         {5,6,7,8},
-                         {9,10,11,12},
-                         {13,14,15,16}};
+        int matrix[][] = {{1,2,3,4,0},
+                         {5,6,7,8,0},
+                         {9,10,11,12,0},
+                         {13,14,15,16,0},
+                        {17,18,19,20,0}};
         spriaMatrix(matrix);
 
     }

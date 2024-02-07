@@ -2,20 +2,32 @@ public class OOPS {
     public static void main(String[] args) {
          Pen p = new Pen();
          p.setcolour("Blue");
-         System.out.println(p.colour);
+         System.out.println(p.getClolour());
          p.setTip(5);
-        System.out.println(p.tip);
+        System.out.println(p.getTip());
+        p.setcolour("Yellow");
+         System.out.println(p.getClolour());
     }
     
 }
 class Pen{
-    String colour;
-    int tip ;
-    void setcolour(String newcolour){
-        colour = newcolour;
+    private String color;
+    private int tip ;
+    // getter methods
+    String getClolour(){
+        return this.color;
+    }
+    
+    int getTip(){
+        return this.tip;
+    }
+
+    //setter methods
+    void setcolour(String newcolor){
+        this.color = newcolor;
 
     }
     void setTip(int newtip){
-        tip = newtip;
+        this.tip = newtip;
     }
     }
