@@ -64,22 +64,46 @@
 //Polymorphis
 //metod overloading
     
+// public class OOPS{
+//     public static void main(String[] args) {
+//         Calculator cl = new Calculator();
+//         System.out.println(cl.sum(10, 0));
+//         System.out.println(cl.sum((float)1.2,(float)2.4));
+//         System.out.println(cl.sum(10, 0,4));
+//     }
+// }
+// class Calculator {
+//     public static int sum(int a , int b) {
+//         return a+b;
+//     }
+//     public static float sum(float a , float b) {
+//         return a+b;
+//     }
+//     public static int sum(int a , int b, int c) {
+//         return a+b+c;
+//     }
+// }
+
+
+
+// method override
 public class OOPS{
     public static void main(String[] args) {
-        Calculator cl = new Calculator();
-        System.out.println(cl.sum(10, 0));
-        System.out.println(cl.sum((float)1.2,(float)2.4));
-        System.out.println(cl.sum(10, 0,4));
+        Second sc = new Second();
+        Animal cs = new Animal();
+        sc.say();
+        cs.say();
     }
 }
-class Calculator {
-    public static int sum(int a , int b) {
-        return a+b;
+
+class Animal{
+    public static void say(){
+        System.out.println("hello");
     }
-    public static float sum(float a , float b) {
-        return a+b;
-    }
-    public static int sum(int a , int b, int c) {
-        return a+b+c;
+}
+
+class Second extends Animal{
+    public static void say(){
+        System.out.println("world");
     }
 }
