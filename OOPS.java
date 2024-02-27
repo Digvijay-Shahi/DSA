@@ -1,5 +1,5 @@
 // import java.util.*;
-// public class OOPS {
+public class OOPS {
 // //     public static void main(String[] args) {
 // //          Pen p = new Pen();
 // //          p.setcolour("Blue");
@@ -61,8 +61,8 @@
 //      int legs;
 // }
 
-//Polymorphis
-//metod overloading
+// Polymorphis
+// metod overloading
     
 // public class OOPS{
 //     public static void main(String[] args) {
@@ -87,23 +87,49 @@
 
 
 // method override
-public class OOPS{
-    public static void main(String[] args) {
-        Second sc = new Second();
-        Animal cs = new Animal();
-        sc.say();
-        cs.say();
+// public class OOPS{
+//     public static void main(String[] args) {
+//         Second sc = new Second();
+//         Animal cs = new Animal();
+//         sc.say();
+//         cs.say();
+//     }
+// }
+
+// class Animal{
+//     public static void say(){
+//         System.out.println("hello");
+//     }
+// }
+
+// class Second extends Animal{
+//     public static void say(){
+//         System.out.println("world");
+//     }
+// }
+
+
+//super keyword 
+public static void main(String args[]){
+    Horse h = new Horse();
+}
+}
+
+class Animal {
+    Animal(){
+        System.out.println("animal is called");
+    }
+}
+class Horse extends Animal{
+    Horse(){
+        super();
+        System.out.println("horse is called");
     }
 }
 
-class Animal{
-    public static void say(){
-        System.out.println("hello");
-    }
-}
 
-class Second extends Animal{
-    public static void say(){
-        System.out.println("world");
-    }
-}
+
+
+
+
+
