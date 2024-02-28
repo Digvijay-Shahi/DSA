@@ -28,16 +28,35 @@ public class Recurrsion {
     //     printNum(i);
     // }
 
+    // public static int fact(int n){
+    //     if (n == 0 ){
+    //         return 1;
+    //     }
+    //     int f1= fact(n-1);
+    //     int f = n * f1;
+    //     return f;
+    // }
+
+    // public static int sumNatural(int n){
+    //     if(n==1){
+    //         return 1;
+    //     }
+    //     int s= sumNatural(n-1);
+    //     int sum = n + s;
+    //     return sum;
+    // }
+
     public static int fact(int n){
-        if (n == 0 ){
-            return 1;
+        if (n == 0 || n == 1){
+            return n;
         }
         int f1= fact(n-1);
-        int f = n * f1;
+        int f2 = fact(n-2);
+        int f = f1 +f2;
         return f;
     }
     public static void main(String[] args) {
-        int n = 5;
+        int n = 25;
         System.out.println(fact(n));
     }
 }
